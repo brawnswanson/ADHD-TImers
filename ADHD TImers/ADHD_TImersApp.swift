@@ -11,7 +11,9 @@ import SwiftUI
 struct ADHD_TImersApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                HomeView()
+            }.navigationViewStyle(.stack)
         }
     }
 }
